@@ -1,0 +1,16 @@
+# ninja log v5
+4	603	6695143184680970	build.ninja	8a3753cd6776aa4a
+160	354	6694929673066628	untitled3.exe	be613415037803ad
+0	385	6697273818901728	CMakeFiles/GestionHotel.dir/HOTEL_LLC_BIBLIO.c.obj	6852c64b70af5fc0
+2	180	6697275404755477	CMakeFiles/GestionHotel.dir/main.c.obj	ace7518e77b23721
+2	99	6697275613552173	CMakeFiles/GestionHotel.dir/main.c.obj	ace7518e77b23721
+100	301	6697275615496552	GestionHotel.exe	d9957dc87e9e864a
+2	87	6697276902240485	CMakeFiles/GestionHotel.dir/HOTEL_LLC_BIBLIO.c.obj	6852c64b70af5fc0
+13	97	6697276902260505	CMakeFiles/GestionHotel.dir/main.c.obj	ace7518e77b23721
+97	201	6697276903202185	GestionHotel.exe	d9957dc87e9e864a
+2	89	6697278234877143	CMakeFiles/GestionHotel.dir/main.c.obj	ace7518e77b23721
+89	201	6697278235970055	GestionHotel.exe	d9957dc87e9e864a
+1	89	6697278395332861	CMakeFiles/GestionHotel.dir/main.c.obj	ace7518e77b23721
+90	182	6697278396268380	GestionHotel.exe	d9957dc87e9e864a
+2	95	6697278686963297	CMakeFiles/GestionHotel.dir/main.c.obj	ace7518e77b23721
+96	202	6697278688007919	GestionHotel.exe	d9957dc87e9e864a
