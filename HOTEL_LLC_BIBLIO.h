@@ -20,6 +20,24 @@ struct structure_clients {
 };
 typedef struct structure_clients structure_clients;
 
+struct structure_reservations {
+    int ref;
+    int nbrNuits;
+    int dateRes[3];
+    int dateSesJours[3];
+    int nbrPersonnes;
+    int chmbreRes;
+    int Client;
+    int Montant;
+};
+typedef struct structure_reservations structure_reservations;
+
+struct structure_reservation {
+    structure_reservations * tete;
+    structure_reservations * queue;
+};
+typedef struct maillon_reservation  structure_reservation;
 
 int Initialiser_Chambres(maillon_chambre tab[100]);
-void Initialiser_Clients(structure_clients *);
+int Initialiser_Clients(structure_clients *);
+int Initialiser_Reservations(structure_reservations *);

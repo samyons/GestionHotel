@@ -27,13 +27,16 @@ int Initialiser_Chambres(maillon_chambre tab[100]) {
 /* La fonction "Initialiser_Clients" récupère les informations sur les clients à partir du
    fichier "clients.txt" puis les insère une liste linéaire chaînée. */
 
-void Initialiser_Clients(structure_clients * liste) {
+int Initialiser_Clients(structure_clients * liste) {
     FILE * fichierClients = NULL;
     fichierClients = fopen("clients.txt", "r");
 
-    maillon_client * pointeurClient, temp;
+    maillon_client * pointeurClient;
     (*liste).tete = NULL;
     (*liste).queue = NULL;
+
+    int totalClients;
+    fscanf(fichierClients, "%d", &totalClients);
 
     if (fichierClients != NULL) {
         while (!feof(fichierClients)) {
@@ -50,5 +53,24 @@ void Initialiser_Clients(structure_clients * liste) {
         }
         ((*liste).queue)->suivant = NULL;
     }
+    fclose(fichierClients);
+    return totalClients;
+}
+
+
+int Initialiser_Reservations(structure_reservations *liste ) {
+    structure_reservations *structureDeReservationsRes;
+    FILE *fichierReservation;
+    fichierReservation = fopen("reservations.txt", "r");
+    if (fichierReservation!= NULL) {
+        fscanf("%d %d %d %d %d %d %d %d %d %d %d %d",)
+        fclose(fichierReservation);
+        return 0;
+    }
+    else {
+        printf("Impossible d'ouvrir le fichier chambres.txt.\n");
+        return -1;
+    }
+
 }
 
